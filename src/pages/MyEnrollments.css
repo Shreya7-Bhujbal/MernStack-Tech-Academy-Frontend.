@@ -1,0 +1,99 @@
+.my-enrollments { padding-top: 80px; }
+
+.enrollments-hero {
+  background: linear-gradient(135deg, rgba(108,99,255,0.15), rgba(67,233,123,0.05));
+  border-bottom: 1px solid var(--border);
+  padding: 60px 0 40px;
+  text-align: center;
+}
+
+.enrollments-hero h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 8px; }
+.enrollments-hero p { color: var(--muted); font-size: 16px; margin-bottom: 28px; }
+
+.email-search {
+  display: flex;
+  gap: 12px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.email-search input { flex: 1; }
+
+.enrollments-body { padding: 60px 20px; }
+
+.enrollments-placeholder {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.placeholder-icon { font-size: 64px; margin-bottom: 16px; }
+.enrollments-placeholder h3 { font-size: 1.5rem; font-weight: 700; margin-bottom: 8px; }
+.enrollments-placeholder p { color: var(--muted); }
+
+.empty-state {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.empty-icon { font-size: 64px; margin-bottom: 16px; }
+.empty-state h3 { font-size: 1.5rem; font-weight: 700; margin-bottom: 8px; }
+.empty-state p { color: var(--muted); margin-bottom: 24px; }
+
+.enrollments-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.enrollments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 20px;
+}
+
+.enrollment-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: border-color 0.2s;
+}
+
+.enrollment-card:hover { border-color: var(--accent); }
+
+.enrollment-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.enrollment-top h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; line-height: 1.4; }
+
+.enrollment-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.enrollment-course-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 13px;
+  color: var(--muted);
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.enrollment-footer { margin-top: 4px; }
+
+.enrollment-footer .btn-outline {
+  padding: 8px 18px;
+  font-size: 13px;
+}
