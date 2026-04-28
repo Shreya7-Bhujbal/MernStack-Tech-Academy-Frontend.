@@ -1,5 +1,24 @@
-# TechAcademy Frontend
+# Tech Academy - Frontend
 
+This is the frontend application for the Tech Academy MERN stack project, built with **React.js**.
+
+## 🚀 Features
+* Responsive User Interface
+* Course Catalog & Details
+* Interactive Learning Dashboard
+* Integrated with Backend API
+
+## 🛠️ Tech Stack
+* **Framework:** React.js
+* **Styling:** CSS3 / Bootstrap
+* **State Management:** Hooks / Context API
+* **Deployment:** Render (Static Site)
+
+## 📦 Installation & Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/Shreya7-Bhujbal/MernStack-Tech-Academy-Frontend.git](https://github.com/Shreya7-Bhujbal/MernStack-Tech-Academy-Frontend.git)
 ## Setup
 
 1. Install dependencies:
