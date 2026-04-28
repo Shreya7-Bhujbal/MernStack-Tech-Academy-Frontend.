@@ -22,8 +22,9 @@ export default function Courses() {
       if (level !== "All") params.level = level;
       if (search) params.search = search;
       const res = await getCourses(params);
-      setCourses(res.data);
-    } catch {
+      setCourses(res.data || []);
+    } catch (err) {
+      console.error("Failed to fetch courses:", err);
       setCourses([]);
     } finally {
       setLoading(false);
@@ -43,8 +44,12 @@ export default function Courses() {
     setSeeding(true);
     try {
       await seedCourses();
+      alert("✅ Courses seeded successfully!");
       fetchCourses();
-    } catch {}
+    } catch (err) {
+      console.error("Failed to seed courses:", err);
+      alert("❌ Failed to seed courses. Please try again.");
+    }
     setSeeding(false);
   };
 

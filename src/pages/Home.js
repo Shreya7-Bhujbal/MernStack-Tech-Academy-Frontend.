@@ -28,11 +28,22 @@ const testimonials = [
 
 export default function Home() {
   const [featured, setFeatured] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     getCourses()
-      .then((r) => setFeatured(r.data.filter((c) => c.isFeatured).slice(0, 3)))
-      .catch(() => {});
+      .then((r) => {
+        const allCourses = r.data || [];
+        const featuredCourses = allCourses.filter((c) => c.isFeatured).slice(0, 3);
+        setFeatured(featuredCourses);
+      })
+      .catch((err) => {
+        console.error("Failed to load featured courses:", err);
+        setFeatured([]);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   }, []);
 
   return (
